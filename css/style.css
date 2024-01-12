@@ -12,7 +12,7 @@ body {
 /* メニューバー */
 .gnav {
     position: fixed;
-    width: 170px; /*200にするとなんか変になる*/
+    width: 200px;
     height: 100%;
     background-color: #fff;
 }
@@ -48,7 +48,8 @@ body {
 }
 
 .gnav-snsicon {
-padding-left: 30px;
+  font-size: 16px;
+  padding-left: 30px;
 }
 
 .gnav-snsicon img {
@@ -70,24 +71,27 @@ padding-left: 30px;
 
 .main-visual img {
   padding-top: 30px;
-  padding-bottom: 30px;
-  width: 30%;
+  padding-bottom: 10px;
+  width: 30vw;
   margin: 0 auto;
 }
 
 #date-no {
   font-size: 10px;
-  display: inline;
+  display: inline-block;
   background-color: #fff;
-  padding: 10px;
+  margin-left: 50px;
+  width: 190px;
   text-align: left;
 }
 
 p {
   font-size: 24px;
+  display: inline-block;
   font-weight: bold;
   background-color: #fff;
-  padding: 10px;
+  width: 380px;
+  margin-left: 50px;
   text-align: left;
 }
 
@@ -111,11 +115,11 @@ p {
 /* サブビジュアル */
 
 .sub-visual {
-    padding-left: 170px;
+    padding-left: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2列のグリッドを作成 */
     grid-gap: 0px; /* カラム間の余白を指定 */
-    max-width: 1000px; /* カラムの最大幅を指定 */
+    max-width:100%; /* カラムの最大幅を指定 */
  
   }
   
@@ -239,7 +243,7 @@ h2 {
   .gnav-menu {
     position: fixed;
     top: 0;
-    /* right: -240px; */
+    right: -240px; /*ここで開閉 */
     z-index: 100;
     width: 100%;
     max-width: 240px;
