@@ -211,6 +211,9 @@ h2 {
     background: #f9ffff;
 }
 
+.gnav-hidden {
+  display: none;
+    }
 
 
 @media screen and (max-width: 768px) {
@@ -243,7 +246,7 @@ h2 {
   .gnav-menu {
     position: fixed;
     top: 0;
-    right: -240px; /*ここで開閉 */
+    /* right: -240px; ここで開閉 */
     z-index: 100;
     width: 100%;
     max-width: 240px;
@@ -290,8 +293,8 @@ h2 {
   }
 
 
-  #gnav-input:checked ~ #gnav-btn {background: url(../img/ico-nav-close.svg) center center no-repeat;}
-  #gnav-input:checked ~ .gnav-menu {right:0;}
+  #gnav-input:checked~#gnav-btn {background: url(../img/ico-nav-close.svg) center center no-repeat;}
+  #gnav-input:checked~.gnav-menu {right:0;}
 
 
 
@@ -329,12 +332,4 @@ h2 {
     width: 60%;
 }
 
-  @media screen and (min-width: 769px) {
-.gnav-hidden {
-  display: none;
-    }
-
-    
-
-
-  }}
+ }
